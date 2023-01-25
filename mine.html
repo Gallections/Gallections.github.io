@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Seeker</title>
+    <link rel="stylesheet" href="mine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/png" href="images/android-chrome-192x192.png">
+</head>
+<body>
+    <section>
+        <div class="partOne">
+            <div>
+                <ul>
+                    <li><a href="contact.html">Contact
+                        <div class="line"></div>
+                    </a>
+                    </li>
+                    <li><a href="about.html">About
+                        <div class="line"></div>
+                    </a>
+                    </li>
+                    <li><a href="reference.html">Reference
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="spaceInvader.html">Space Invader
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="breakOut.html">Break Out
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a href="mine.html">MineSeeker
+                        <div class="line"></div>
+                    </a></li>
+                    <li><a class="home" href="index.html">Home
+                        <div class="line"></div>
+                    </a></li>
+                    <img src="images/favlogo.png">
+                </ul>
+            </div>
+
+            <h1>Modern Mine Seeker   <span id="state"></span></h1>
+            <h3 >Timer: <span id="timer"></span></h3>
+            <div class="game">
+                <div class="form">
+                    <label>Difficulties: </label>
+                    <select id="framework">
+                        <option class="diff" value="8x8 ">8 X 8 </option>
+                        <option class="diff" value="9x9 ">9 X 9 </option>
+                        <option class="diff" value="10x10">10 X 10</option>
+                        <option class="diff" value="13x15">13 X 15</option>
+                        <option class="diff" value="16x16">16 X 16</option>
+                        <option class="diff" value="16x30">16 X 30</option>
+                        <option class="diff" value="18x30">18 X 30</option>
+                        <option class="diff" value="22x30">22 X 30</option>
+                        <option class="diff" value="24x30">24 X 30</option>
+                    </select>
+                    <button id="formBtn">Select / Start</button>
+                </div>
+                <div class="container">
+                    <!-- <h1>Mine Seeker</h1> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="partTwo">
+            <div class="ruleBox">
+                <h1>Game Rules</h1>
+                <div class="rule">
+                    <ul>
+                        <li><i class="fa-solid fa-circle-dot"></i>Each cell can be treated as the center of a 3 X 3 square, the number on the center of the cell
+                            represents the number of mines that is hidden in the 8 cells surrounding the center cell.</li>
+                        <li><i class="fa-solid fa-circle-dot"></i>For the cells on the corners or edges, the number would represent the number of mines that is hidden
+                            in the rest of the cells surroudning that cell.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>To help marking the position of mine, right click to add a flag on the cell.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>To win the game, you need to reveal all the non-mined cells. If a mine is left-clicked, you lose the game!
+                        </li>
+                        <li><i class="fa-solid fa-circle-dot"></i>Happy Mining! ;)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="partFour">
+            <div class="fourleft">
+                <h1>Games You would Like to See</h1>
+                <p>-Mineseeker</p>
+                <p>-Space Invader</p>
+                <p>-Break Out</p>
+                <p>-Waiting For Updates</p>
+            </div>
+            <div class="fourright">
+                <h1>If you have any classic game suggestions, please contact me here! Updates will be made regularly...</h1>
+                <button class="Contact"><a href="contact.html">Contact Me</a></button>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="partFive">
+            <h1>Start your Exploration of Childhood Memories</h1>
+        </div>
+
+    </section>
+    <hr>
+    <section>
+        <div class="partSix">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <img src="images/favlogo.png">
+                    <h1>allections</h1>
+                    <p>Welcome to my website!</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> unavailable</span>
+                        <span><i class="fas fa-envelope"></i> Gallections@gmail.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/gallections/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section quickLinks">
+                    <h1>Quick Links</h1>
+                    <br>
+                    <ul>
+                        <a href="mine.html"><li>Mine Seeker</li></a>
+                        <br>
+                        <a href="spaceInvader.html"><li>Space Invader</li></a>
+                        <br>
+                        <a href="breakOut.html"><li>Break Out</li></a>
+                        <br>
+                        <a href="reference.html"><li>Reference</li></a>
+                        <br>
+                        <a href="about.html"><li>About</li></a>
+                        <br>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="footer-bottom"></div>
+        </div>
+    </section>
+
+    <script src="mine.js"></script>
+</body>
+</html>

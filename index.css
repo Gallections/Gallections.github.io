@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'poppins';
+    color: white;
+}
+
+.home{
+    position: relative;
+}
+
+.partOne ul img{
+    margin-top: 2.1vmin;
+    margin-left: 2vmin;
+    position: absolute;
+    left: 0.5vmin;
+    display: inline-block;
+    height: 7vmin;
+    width: 7vmin;
+    float: left;
+
+}
+
+.partOne ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 5vmin auto;
+    overflow: hidden;
+    /* background-color: rgb(39, 61, 86); */
+    border-radius: 0.5vmin;
+}
+
+li{
+    float: right;
+    /* border-right:1px solid #bbb; */
+}
+
+li:last-child{
+    float: left;
+    border-right: none;
+    /* border-left:1px solid #bbb; */
+  }
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-weight:800;
+    font-size: 2.9vmin;
+    margin-top: 1.2vmin;
+    transition: color 2s;
+    position: relative;
+    margin: 2vmin 0.5vmin;
+}
+
+li a:hover{
+    /* background-color: #111; */
+    color: rgb(66, 128, 222);
+}
+
+.line{
+    width: 0;
+    height: 0.45vmin;
+    background-color: rgb(66, 128, 222);
+    position: absolute;
+    bottom: 7%;
+    left:15%;
+    transition: width 2s;
+    
+}
+li a:hover .line{
+    width: 70%;
+}
+
+/* .home{
+    background-color: rgb(56, 103, 154);
+} */
+
+/* .home:hover{
+    background-color: rgb(47, 83, 123)
+} */
+
+hr{
+    background-color: rgb(42, 40, 122);
+    height: 0.4vmin;
+}
+
+/* [part One */
+.partOne{
+    
+    margin: 0;
+    background-image: url(images/background1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100vw;
+    font-size:0;
+    position: relative;
+    padding-bottom: 6vmin;
+}
+
+.Main{
+    text-align: center;
+    margin: 15vh 9vh;
+    font-size: 10vmin;
+    text-shadow: rgb(157, 0, 255) 10px 0 20px;
+    color: rgb(247, 236, 250);
+}
+
+.rest{
+    text-align: center;
+    margin: 9vh 9vh;
+    display: block;
+    font-size: 3vmin;
+}
+
+.btnEx{
+    display: block;
+    margin:0 auto;
+    width: 27vw;
+    height: 9vh;
+    font-size: 3vmin;
+    font-weight: 600;
+    border: 1vmin solid rgb(42, 40, 122);
+    text-align: center;
+    background-color: transparent;
+    color: rgb(246, 241, 193);
+    transition: all 1s;
+    /* position: absolute; */
+    bottom: 8vw;
+    left: 36.5vw;
+    cursor:pointer;
+}
+
+.btnEx:hover{
+    background-color:rgb(42, 40, 122);
+    transition: all 2s;
+}
+/* Part Two */
+.partTwo{
+    margin:0;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    color: black;
+    flex: 1;
+    justify-content: space-evenly;
+    background-color: rgb(43, 41, 41);
+}
+
+/* .partTwo i{
+    color: rgb(27, 27, 160);
+    justify-content: space-evenly;
+    margin: 0.5vw 7.8vw;
+    font-size: 2.7vw;
+} */
+
+.partTwo .icon1{
+    color: rgb(60, 12, 92);
+    justify-content: space-evenly;
+    margin: 0.5vw 7.8vw;
+    font-size: 2.7vw;
+    animation-name: colorchange1;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+
+.partTwo .icon2{
+    color: rgb(27, 27, 160);
+    justify-content: space-evenly;
+    margin: 0.5vw 7.8vw;
+    font-size: 2.7vw;
+    animation-name: colorchange2;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange1{
+    0%   {color: rgb(60, 12, 92);}
+    50%  {color: rgb(27, 27, 160);}
+    100% {color: rgb(60, 12, 92);}
+}
+
+@keyframes colorchange2{
+    0%   {color: rgb(27, 27, 160);}
+    50%  {color: rgb(60, 12, 92);}
+    100% {color: rgb(27, 27, 160);}
+}
+
+/* 
+Part Three : Games Offered */
+
+.partThree{
+    margin:0;
+    overflow:hidden;
+    height: 50vw;
+    width: 100vw;
+    background-color:antiquewhite;
+    /* background-color: rgb(45, 115, 176); */
+}
+
+.partThree h3{
+    font-size: 6vmin;
+    display: block;
+    font-weight: 950;
+    text-align: center;
+    margin: 3vmin 0vmin;
+    color: rgb(4, 40, 94);
+}
+
+.partThree div{
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bigFrame{
+    background-color:none;
+    height: 38vw;
+    width: 30vw;
+    border: 0.1vmin solid rgb(4, 40, 94);
+    padding:0;
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 1s;
+    background-color:bisque;
+}
+
+.bigFrame h1{
+    /* margin: 0.8vmin; */
+    font-size: 4.5vmin;
+    top: 1.5vh;
+    display: block;
+    position:absolute;
+}
+
+.bigFrame:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+.frame{
+    position:absolute;
+    top: 7vh;
+    border: 0.1vmin solid black;
+    width: 95%;
+    height: 73%;
+    position: relative;
+    margin: 2vmin;
+    margin-bottom: 5vh;
+    box-sizing: border-box;
+}
+
+.frame img{
+    width: 100%;
+    height: 100%;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clickBar{
+    position: absolute;
+    width: 55%; 
+    height: 7vmin;
+    left: 22.5%;
+    bottom:2.5vh;
+    background-color: rgb(245, 236, 224);
+    border: 0.7vmin solid rgb(3, 81, 154);
+    transition: background-color 2s, box-shadow 2s;
+    font-size:3.5vmin;
+    text-align: center;
+    margin: auto;
+    font-weight:800;
+    font-family:poppins;
+    cursor: pointer;
+}
+
+.clickBar:hover{
+    background-color: rgb(3, 81, 154);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Part 4  Games You Would like to See */
+.partFour{
+    margin:0;
+    overflow:hidden;
+    height: 80vh;
+    width: 100vw;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fourleft{
+    height: 100%;
+    width: 60vw;
+    background-image: linear-gradient(45deg, rgb(20, 20, 63),rgb(87, 189, 249));
+    text-align:center;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fourright{
+    height: 100%;
+    width:40vw;
+    /* justify-content: space-evenly; */
+    align-items:center;
+    justify-content:center;
+    background-image:url(images/codes.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10vmin 5vmin 3vmin 5vmin;
+}
+
+.fourleft h1{
+    text-align: center;
+    font-size:10.5vmin;
+    color: rgb(2, 26, 62);
+    margin: 10vmin 5vmin 0 5vmin;
+    vertical-align: middle;
+    text-shadow:  rgb(15, 64, 110) 1px 10px 10px;
+
+}
+
+.fourleft p{
+    color: rgb(2, 26, 62);
+    height: 10%;
+    /* margin: 5vh 1%; */
+    font-size: 3vmin;
+    float: left;
+    display: block;
+    background-color:rgb(21, 106, 185);
+    padding: 2vmin;
+    border-radius:1.5vmin;
+    box-sizing: border-box;
+    margin: 1vmin;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fourright h1{
+    font-size: 3.5vmin;
+    /* margin: 10vmin 5vmin 3vmin 5vmin; */
+    color: rgb(131, 209, 236);
+}
+
+.Contact{
+    width: 45%;
+    height: 15%;
+    background-color:rgb(53, 139, 219);
+    border-radius: 8vw;
+    margin: 20vmin auto auto 22.5%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 3.5vmin;
+    font-weight: 700;
+    transition: box-shadow 0.7s;
+    cursor: pointer;
+    color: white;
+    font-family: poppins;
+}
+
+
+.Contact:hover{
+    box-shadow: rgba(22, 147, 236, 0.781) 2px 5px 10px
+}
+
+
+
+/* Part 5: */
+
+.partFive{
+    margin:0;
+    height: 10vh;
+    width: 100vw;
+    color: black;
+    box-sizing: border-box;
+    background-color:antiquewhite;
+    vertical-align: middle;
+    padding: 2vh;
+}
+.partFive h1{
+    font-size: 3.2vmin;
+    text-align: center;
+    /* margin: 5vmin; */
+    display: block;
+    background-image: linear-gradient(to left, rgb(80, 184, 249),rgb(10, 10, 126));
+    /* border: 0.6vmin solid rgb(13, 21, 70); */
+    color:rgb(255, 208, 0);
+    box-shadow: rgba(0, 0, 0, 0.35) 6px 10px 15px;
+    border-radius: 1vmin;
+    font-weight: 200;
+}
+
+
+/* partSix: */
+.partSix{
+    margin:0;
+    height: 50vh;
+    width: 100vw;
+    color: rgb(199, 197, 197);
+    position: relative;
+}
+
+.partSix .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-section{
+    background-color:rgb(44, 42, 42);
+    /* border: 0.5vmin solid black; */
+    height: 100%;
+    width: 33.3333333333333333333333333%;
+}
+
+.partSix img{
+    margin-top: 1vh;
+    margin-left: 4vmin;
+    position: absolute;
+    left: 0.5vmin;
+    display: inline-block;
+    height: 7vmin;
+    width: 7vmin;
+    float: left;
+}
+
+.partSix .about h1{
+    margin-top: 0.8vmin;
+    margin-left: 6.5vmin;
+    color:rgb(253, 173, 74);
+}
+
+
+.partSix .footer-bottom{
+    background-color:rgb(57, 56, 56);
+    color: rgb(63, 62, 62);
+    height:4vh;
+    width: 100%;
+    text-align:center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 3vh;
+}
+.partSix .footer-section{
+    padding-left: 5vmin;
+    padding-top: 3vmin;
+}
+
+.partSix .footer-content .about p{
+    margin-top: 3vmin;
+}
+
+.partSix .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+}
+
+.partSix .footer-content .about .contact{
+    margin-bottom: 5vmin;
+}
+
+.partSix .footer-content .about .socials a i{
+    border: 0.4vmin solid gray;
+    width: 6vmin;
+    height: 6vmin;
+    font-size: 4vmin;
+    text-align: center;
+    border-radius: 1vmin;
+    color: gray;
+    vertical-align:middle;
+    padding-top: 0.5vmin;
+    display: inline-block;
+    transition: border-color 1s, color 1s;
+}
+
+.partSix .footer-content .about .socials a i:hover{
+    border-color: white;
+    color: white
+}
+
+.quickLinks ul{
+    margin-bottom: 2vmin;
+    /* display: block; */
+    font-size: 1.2em;
+    list-style-type: disc;
+    justify-content: space-evenly;
+}
+
+.quickLinks ul a{
+    display: block;
+    margin-left: 5vmin;
+    transition: all 0.3s;
+}
+
+.quickLinks ul a:hover{
+    color: white;
+    margin-left: 8vmin;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+    ul li:last-child,
+    ul li {
+        float: none;
+        border-bottom:1px solid #bbb;
+        color:rgb(85, 184, 255);
+        text-shadow:white 3px 0 20px;
+    }
+    .bigFrame{
+        width: 95vw;
+        margin-bottom: 5vh;
+        height: 120vw;
+    }
+    .partThree{
+        height: 400vw;
+    }
+    .footer-section{
+        width: 100%;
+    }
+    .partFour{
+        display: block;
+        height: 125vh;
+
+    }
+    .fourleft{
+        height: 60%;
+        width: 100%;
+        border-bottom:2vh solid rgb(57, 56, 56);
+    }
+    .fourright{
+        height: 40%;
+        width:100%;
+    }
+    .fourleft p{
+        padding: 2vh;
+    }
+
+    .partSix ul li{
+        color: white;
+        border-bottom:none;
+        box-shadow: none;
+    }
+
+}
