@@ -14,5 +14,6 @@ Curret Three games offered in the platform:
 - Message Center: Users can send me classic game suggestions, these game suggestions will be considered in future updates. 
 
 ## Acknowledgement:
-This is an individual project.
+This is an individual project. 
+
 Sincere appreciation to Ania Kobow for the inspiration of the game of Break Out and Space Invader. 
