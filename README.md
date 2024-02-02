@@ -5,10 +5,14 @@ This is a website that is built using vinilla JavaScript, CSS, and HTML. The pro
 
 ## Functionality:
 Curret Three games offered in the platform:
-- Mine Seeker:
+- Mine Seeker: A logic game that asks the user to correctly mine all the bombs in a grid board based on numbers revealed on each grid.
 
-- Break Out:
+- Break Out: Users controls a panel to bounce a ball around with the goal to cancel all floating blocks.
 
-- Space Invader:
+- Space Invader: User controls an battlecraft with the goal to eliminate all enemies through launching missiles.
+
+- Message Center: Users can send me classic game suggestions, these game suggestions will be considered in future updates. 
 
 ## Acknowledgement:
+This is an individual project.
+Sincere appreciation to Ania Kobow for the inspiration of the game of Break Out and Space Invader. 
